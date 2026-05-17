@@ -22,7 +22,23 @@ function App() {
           <p>J'ai découvert le développement web grâce à l'application Mimo avant de me former à l'Ecole O'Clock et je suis maintenant développeuse FullStack et passionnée ! </p>
         </Section>
         <Section title="Mes Compétences">
-          <Skill name="JavaScript" icon="🐢" />
+          <p className="skills">Compétences acquises</p>
+          <Skill name="HTML5" icon="📜" />
+          <Skill name="CSS" icon="🎨" />
+          <Skill name="EJS" icon="🏷️" />
+          <Skill name="JavaScript" icon="⚡" />
+          <Skill name="POO" icon="🧱"/>
+          <Skill name="Svelte" icon="🔺" />
+          <Skill name="Node.js" icon="🟢" />
+          <Skill name="Express" icon="🚂" />
+          <Skill name="Sequelize" icon="🐟" />
+          <Skill name="PostgreSQL" icon="🐘" />
+          <p className="skills">Compétences en cours d'acquisition</p>
+          <Skill name="React" icon="⚛️"/>
+          <Skill name="Java" icon="☕"/>
+          <Skill name="PHP" icon="🔹"/>
+          <Skill name="Symphony" icon="🎼"/>
+
         </Section>
         <Section title="Mes projets">
           <p>Projets à venir...</p>
@@ -35,12 +51,12 @@ function App() {
             />
           <SocialLink
             platform="LinkedIn"
-            url="www.linkedin.com/in/margaux-stienne"
+            url="https://www.linkedin.com/in/margaux-stienne"
             username="Margaux Stienne" 
             />            
         </Section>
       </main>
-      <Footer githubUrl="https://github.com/MargauxStienne0304" />
+      <Footer />
     </div>
   );
 }

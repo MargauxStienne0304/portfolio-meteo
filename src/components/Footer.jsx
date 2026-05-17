@@ -1,10 +1,7 @@
-function Footer({githubUrl= "https://github.com/MargauxStienne0304"}){
+function Footer(){
     return(
         <footer className="footer">
             <p>© 2026 Margaux Stienne</p>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                Mon Github
-            </a>
         </footer>
     );
 }
