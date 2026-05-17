@@ -1,8 +1,8 @@
-function Header() {
+function Header({title="Mon Portfolio Dev", subtitle = "Margaux Stienne"}) {
     return (
         <header className="header">
-            <h1>Mon Portfolio dev</h1>
-            <p> 👩‍💻 Margaux Stienne</p>
+            <h1>{title}</h1>
+            <p> 👩‍💻 {subtitle}</p>
         </header>
     );
 }
