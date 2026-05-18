@@ -3,42 +3,38 @@ import Section from "./components/Section";
 import Footer from "./components/Footer";
 import Skill from "./components/Skill";
 import SocialLink from "./components/SocialLink";
-import NavBar from "./components/NavBar";
 import './App.css';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <NavBar
-      links={[
-        { text:"Accueil", url:"/"},
-        { text:"Projects", url:"/projects"},
-        { text:"Contact", url:"/contact"},
-        ]}
-        />
       <main>
         <Section title="À propos de moi">
           <p>J'ai découvert le développement web grâce à l'application Mimo avant de me former à l'Ecole O'Clock et je suis maintenant développeuse FullStack et passionnée ! </p>
         </Section>
         <Section title="Mes Compétences">
           <p className="skills">Compétences acquises</p>
-          <Skill name="HTML5" icon="📜" />
-          <Skill name="CSS" icon="🎨" />
-          <Skill name="EJS" icon="🏷️" />
-          <Skill name="JavaScript" icon="⚡" />
-          <Skill name="POO" icon="🧱"/>
-          <Skill name="Svelte" icon="🔺" />
-          <Skill name="Node.js" icon="🟢" />
-          <Skill name="Express" icon="🚂" />
-          <Skill name="Sequelize" icon="🐟" />
-          <Skill name="PostgreSQL" icon="🐘" />
+          <Skill         
+          skills={[
+          {icon:"📜", name:"HTML5"},
+          {icon:"🎨", name:"CSS"},
+          {icon:"🏷️", name:"EJS"},
+          {icon:"⚡", name:"JavaScript"},
+          {icon:"🧱", name:"POO"},
+          {icon:"🔺", name:"Svelte"},
+          {icon:"🟢", name:"Node.js"},
+          {icon:"🚂", name:"Express"},
+          {icon:"🐟", name:"Sequelize"},
+          {icon:"🐘", name:"PostgreSQL"},
+        ]}/>
           <p className="skills">Compétences en cours d'acquisition</p>
-          <Skill name="React" icon="⚛️"/>
-          <Skill name="Java" icon="☕"/>
-          <Skill name="PHP" icon="🔹"/>
-          <Skill name="Symphony" icon="🎼"/>
-
+         <Skill skills={[
+          {icon:"⚛️", name:"React"},
+          {icon:"☕", name:"Java"},
+          {icon:"🔹", name:"PHP"},
+          {icon:"🎼", name:"Symphony"}
+         ]} />
         </Section>
         <Section title="Mes projets">
           <p>Projets à venir...</p>

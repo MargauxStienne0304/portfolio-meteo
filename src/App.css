@@ -14,7 +14,6 @@ main {
     background-color: #d4C1EC;
     text-align: start;
     padding: 2rem;
-    margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -30,8 +29,9 @@ main {
 
 .navbar {
     padding: 1rem;
-    background-color: #d4C1EC;
     margin-bottom: 2rem;
+    background-color: #dac6f2;
+    border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -47,6 +47,7 @@ main {
     color: #333333;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-size: 1.2rem;
 }
 
 .navbar a:hover {
@@ -66,10 +67,12 @@ main {
     margin-top: 0;
     border-bottom: 2px solid #FFF8F0;
     padding-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .section-content {
     margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 .skills {
@@ -82,15 +85,16 @@ main {
 }
 
 .skill {
-    margin: 1rem;
+    list-style: none;
     font-size: 1.2rem;
     display: inline-flex;
+    gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
 a {
-    margin: 1rem;
     padding: 1rem;
     text-decoration: none;
     color: #333333;
