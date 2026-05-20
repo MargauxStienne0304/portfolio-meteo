@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
 import Skill from "./components/Skill";
+import ProjectCard from "./components/ProjectCard"
 import SocialLink from "./components/SocialLink";
 import './App.css';
 
@@ -37,7 +38,10 @@ function App() {
          ]} />
         </Section>
         <Section title="Mes projets">
+          <p>Projets faits :</p>
+          <ProjectCard/>
           <p>Projets à venir...</p>
+          <ProjectCard/>
         </Section>
         <Section title="Mes Réseaux">
           <SocialLink
