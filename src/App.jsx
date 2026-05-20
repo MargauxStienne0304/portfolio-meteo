@@ -39,9 +39,46 @@ function App() {
         </Section>
         <Section title="Mes projets">
           <p>Projets faits :</p>
-          <ProjectCard/>
+          <div className="section_project_card">
+          <ProjectCard 
+          title="Mon Portfolio"
+          description="Portfolio réalisé lors de l'apprentissage en atodidacte de React"
+          imageUrl=""
+          />
+          <ProjectCard 
+          title="Projet Fig"
+          description="Projet réalisé en formation pour une boutique de figurines"
+          imageUrl=""
+          />
+          <ProjectCard 
+          title="Projet Coffee"
+          description="Projet réalisé en formation pour un catalogue de café"
+          imageUrl=""
+          />
+          <ProjectCard 
+          title="Projet Recipe"
+          description="Projet réalisé en formation pour mettre des recettes en ligne"
+          imageUrl=""
+          />
+          </div>
           <p>Projets à venir...</p>
-          <ProjectCard/>
+          <div className="section_project_card">
+          <ProjectCard 
+          title="Projet Recipe"
+          description="Projet réalisé en formation pour mettre des recettes en ligne"
+          imageUrl=""
+          />
+          <ProjectCard 
+          title="Gestionnaire de Zoo"
+          description="Projet réalisé en autodidacte en JS POO"
+          imageUrl=""
+          />      
+          <ProjectCard 
+          title="Projet Recipe"
+          description="Projet réalisé en autodidacte en React"
+          imageUrl=""
+          /> 
+          </div>   
         </Section>
         <Section title="Mes Réseaux">
           <SocialLink
